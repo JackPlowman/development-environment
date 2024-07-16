@@ -122,7 +122,7 @@ export PATH="$PATH:/usr/local/bin/docker"
 export GPG_TTY=$(tty)
 
 # Oh My Posh
-eval "$(oh-my-posh init zsh)"
+eval "$(oh-my-posh init zsh --config 'https://raw.githubusercontent.com/JackPlowman/development-environment/main/oh-my-posh.json')"
 
 #Other
 export SSO_LOGIN_URL=https://login.apigee.com
