@@ -9,7 +9,7 @@ branch="${1:-origin/main}"
 
 # Rebase current branch with the specified branch
 echo "Rebasing the current branch with the specified branch..."
-git rebase $branch
+git rebase "$branch"
 
 # Push the changes to the remote repository
 echo "Pushing the changes to the remote repository..."
