@@ -55,30 +55,6 @@
           "type": "node"
         },
         {
-          "background": "#00acd7",
-          "foreground": "#111111",
-          "invert_powerline": true,
-          "powerline_symbol": "\ue0b2",
-          "properties": {
-            "fetch_version": true
-          },
-          "style": "powerline",
-          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} \ue627 ",
-          "type": "go"
-        },
-        {
-          "background": "#4063D8",
-          "foreground": "#111111",
-          "invert_powerline": true,
-          "powerline_symbol": "\ue0b2",
-          "properties": {
-            "fetch_version": true
-          },
-          "style": "powerline",
-          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} \ue624 ",
-          "type": "julia"
-        },
-        {
           "background": "#FFDE57",
           "foreground": "#111111",
           "invert_powerline": true,
@@ -90,32 +66,6 @@
           "style": "powerline",
           "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} \ue235 ",
           "type": "python"
-        },
-        {
-          "background": "#AE1401",
-          "foreground": "#ffffff",
-          "invert_powerline": true,
-          "powerline_symbol": "\ue0b2",
-          "properties": {
-            "display_mode": "files",
-            "fetch_version": true
-          },
-          "style": "powerline",
-          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} \ue791 ",
-          "type": "ruby"
-        },
-        {
-          "background": "#FEAC19",
-          "foreground": "#ffffff",
-          "invert_powerline": true,
-          "powerline_symbol": "\ue0b2",
-          "properties": {
-            "display_mode": "files",
-            "fetch_version": false
-          },
-          "style": "powerline",
-          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} \uf0e7",
-          "type": "azfunc"
         },
         {
           "background_templates": [
@@ -133,15 +83,6 @@
           "type": "aws"
         },
         {
-          "background": "#ffff66",
-          "foreground": "#111111",
-          "invert_powerline": true,
-          "powerline_symbol": "\ue0b2",
-          "style": "powerline",
-          "template": " \uf0ad ",
-          "type": "root"
-        },
-        {
           "background": "#c4a000",
           "foreground": "#000000",
           "invert_powerline": true,
@@ -151,7 +92,7 @@
           "type": "executiontime"
         },
         {
-          "background": "#000000",
+          "background": "transparent",
           "background_templates": ["{{ if gt .Code 0 }}#cc2222{{ end }}"],
           "foreground": "#d3d7cf",
           "invert_powerline": true,
@@ -168,7 +109,7 @@
           "foreground": "#000000",
           "invert_powerline": true,
           "style": "diamond",
-          "template": " {{ .CurrentDate | date .Format }} \uf017 ",
+          "template": " {{ .CurrentDate | date .Format }} ",
           "trailing_diamond": "\ue0b0",
           "type": "time"
         }
