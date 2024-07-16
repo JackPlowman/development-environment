@@ -109,7 +109,7 @@ alias dev="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/developm
 # Aliases for Development Scripts
 alias commit="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/development-environment/main/scripts/commit_and_push.sh)"
 alias deploy="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/development-environment/main/scripts/commit_and_deploy.sh)"
-alias branch_cleanup="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/development-environment/scripts/main/remove_all_branches_except_main.sh)"
+alias branch_cleanup="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/development-environment/main/scripts/remove_all_branches_except_main.sh)"
 alias rebase="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/development-environment/main/scripts/rebase_and_push.sh)"
 alias main="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/development-environment/main/scripts/checkout_main_and_pull.sh)"
 
