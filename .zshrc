@@ -106,13 +106,13 @@ alias python='python3.9'
 
 # Aliases for Development Scripts
 alias commit="bash ~/development-environment/scripts/commit_and_push.sh"
-alias deploy="bash ~/development-environment/scripts/scripts/commit_and_deploy.sh"
-alias branch_cleanup="bash ~/development-environment/scripts/scripts/remove_all_branches_except_main.sh"
-alias rebase="bash ~/development-environment/scripts/scripts/rebase_and_push.sh"
-alias main="bash ~/development-environment/scripts/scripts/checkout_main_and_pull.sh"
+alias deploy="bash ~/development-environment/scripts/commit_and_deploy.sh"
+alias branch_cleanup="bash ~/development-environment/scripts/remove_all_branches_except_main.sh"
+alias rebase="bash ~/development-environment/scripts/rebase_and_push.sh"
+alias main="bash ~/development-environment/scripts/checkout_main_and_pull.sh"
 
 # Oh My Posh
-eval "$(oh-my-posh init zsh --config 'https://raw.githubusercontent.com/JackPlowman/development-environment/main/oh-my-posh.json')"
+eval "$(oh-my-posh init zsh --config '~./development-environment/config/oh-my-posh.json')"
 
 # Tools
 ## The Fuck
