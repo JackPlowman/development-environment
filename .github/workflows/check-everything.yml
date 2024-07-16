@@ -30,9 +30,7 @@ jobs:
       - name: ShellCheck
         uses: ludeeus/action-shellcheck@2.0.0
         with:
-          ignore_paths: >-
-            ./.zshrc
-            ./scripts/dev.zsh
+          ignore_names: .zshrc
 
   check-markdown-code-quality:
     name: Check Markdown Code Quality
