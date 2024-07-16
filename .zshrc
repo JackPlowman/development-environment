@@ -105,11 +105,11 @@ alias lg=lazygit
 alias python='python3.9'
 
 # Aliases for Development Scripts
-alias commit="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/development-scripts/main/commit_and_push.sh)"
-alias deploy="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/development-scripts/main/commit_and_deploy.sh)"
-alias branch_cleanup="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/development-scripts/main/remove_all_branches_except_main.sh)"
-alias rebase="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/development-scripts/main/rebase_and_push.sh)"
-alias main="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/development-scripts/main/checkout_main_and_pull.sh)"
+alias commit="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/development-environment/main/scripts/commit_and_push.sh)"
+alias deploy="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/development-environment/main/scripts/commit_and_deploy.sh)"
+alias branch_cleanup="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/development-environment/scripts/main/remove_all_branches_except_main.sh)"
+alias rebase="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/development-environment/main/scripts/rebase_and_push.sh)"
+alias main="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/development-environment/main/scripts/checkout_main_and_pull.sh)"
 
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
