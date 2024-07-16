@@ -103,6 +103,8 @@ export NVM_DIR="$HOME/.nvm"
 alias reload="source ~/.zshrc"
 alias lg=lazygit
 alias python='python3.9'
+# Aliases for developing Development Environment
+alias dev="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/development-environment/main/scripts/dev.sh)"
 
 # Aliases for Development Scripts
 alias commit="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/development-environment/main/scripts/commit_and_push.sh)"
