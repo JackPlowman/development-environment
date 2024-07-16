@@ -109,7 +109,7 @@ alias commit="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/devel
 alias deploy="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/development-scripts/main/commit_and_deploy.sh)"
 alias branch_cleanup="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/development-scripts/main/remove_all_branches_except_main.sh)"
 alias rebase="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/development-scripts/main/rebase_and_push.sh)"
-alias main="sh ~/Projects/development-scripts/checkout_main_and_pull.sh"
+alias main="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/development-scripts/main/checkout_main_and_pull.sh)"
 
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
