@@ -103,29 +103,28 @@ export NVM_DIR="$HOME/.nvm"
 alias reload="source ~/.zshrc"
 alias lg=lazygit
 alias python='python3.9'
-# Aliases for developing Development Environment
-alias dev="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/development-environment/main/scripts/dev.sh)"
 
 # Aliases for Development Scripts
-alias commit="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/development-environment/main/scripts/commit_and_push.sh)"
-alias deploy="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/development-environment/main/scripts/commit_and_deploy.sh)"
-alias branch_cleanup="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/development-environment/main/scripts/remove_all_branches_except_main.sh)"
-alias rebase="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/development-environment/main/scripts/rebase_and_push.sh)"
-alias main="bash <(curl -s https://raw.githubusercontent.com/JackPlowman/development-environment/main/scripts/checkout_main_and_pull.sh)"
+alias commit="bash ~/development-environment/scripts/commit_and_push.sh"
+alias deploy="bash ~/development-environment/scripts/scripts/commit_and_deploy.sh"
+alias branch_cleanup="bash ~/development-environment/scripts/scripts/remove_all_branches_except_main.sh"
+alias rebase="bash ~/development-environment/scripts/scripts/rebase_and_push.sh"
+alias main="bash ~/development-environment/scripts/scripts/checkout_main_and_pull.sh"
 
+# Oh My Posh
+eval "$(oh-my-posh init zsh --config 'https://raw.githubusercontent.com/JackPlowman/development-environment/main/oh-my-posh.json')"
+
+# Tools
+## The Fuck
+eval $(thefuck --alias)
+## Git Custom
+export GPG_TTY=$(tty)
+# Homebrew JDK
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 # Add Docker
 export PATH="$PATH:/usr/local/bin/docker"
 
-# Git Custom
-export GPG_TTY=$(tty)
-
-# Oh My Posh
-eval "$(oh-my-posh init zsh --config 'https://raw.githubusercontent.com/JackPlowman/development-environment/main/oh-my-posh.json')"
-
-#Other
+# Environment Variables
 export SSO_LOGIN_URL=https://login.apigee.com
-eval $(thefuck --alias)
-
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
