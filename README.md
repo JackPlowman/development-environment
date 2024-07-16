@@ -26,3 +26,14 @@ source ~/.zshrc
 ```
 
 This will load the development environment and set up the necessary aliases and environment variables.
+
+## Development
+
+To update the ZSH configuration when making changes, run the following command:
+
+```bash
+scripts/dev.zsh
+```
+
+This will reload the configuration and apply any changes.
+
