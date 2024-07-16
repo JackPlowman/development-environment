@@ -30,4 +30,6 @@ jobs:
       - name: ShellCheck
         uses: ludeeus/action-shellcheck@2.0.0
         with:
-          ignore_names: .zshrc
+          ignore_paths: >-
+            ./.zshrc
+            ./scripts/dev.zsh
