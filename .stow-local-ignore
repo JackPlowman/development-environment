@@ -1,5 +1,6 @@
 .editorconfig
 .git
+.gitattributes
 .github
 LICENSE
 README.md
