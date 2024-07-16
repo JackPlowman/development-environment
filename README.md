@@ -25,7 +25,8 @@ To start a new terminal session, open the terminal and run the following command
 source ~/.zshrc
 ```
 
-This will load the development environment and set up the necessary aliases and environment variables.
+This will load the development environment and set up the necessary aliases and
+ environment variables.
 
 ## Development
 
@@ -36,4 +37,3 @@ scripts/dev.zsh
 ```
 
 This will reload the configuration and apply any changes.
-
