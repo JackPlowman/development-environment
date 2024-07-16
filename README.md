@@ -12,7 +12,7 @@ cd development-environment
 Copy the `.zshrc` file to your home directory:
 
 ```bash
-cp .zshrc ~/.zshrc
+cp -i .zshrc ~/.zshrc
 ```
 
 Open the `.zshrc` file in your text editor and make any necessary changes.
@@ -26,5 +26,3 @@ source ~/.zshrc
 ```
 
 This will load the development environment and set up the necessary aliases and environment variables.
-
-
