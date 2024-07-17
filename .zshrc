@@ -57,6 +57,7 @@ eval $(thefuck --alias)
 alias reload="source ~/.zshrc"
 alias lg=lazygit
 alias python='python3.9'
+alias cd=zoxide
 
 # Aliases for Development Scripts
 alias commit="bash ~/development-environment/scripts/commit_and_push.sh"
