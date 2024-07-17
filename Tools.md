@@ -12,6 +12,8 @@
 
 - [thefuck](https://github.com/nvbn/thefuck)
 - [lazygit](https://github.com/jesseduffield/lazygit)
+- [zoxide](https://github.com/ajeetdsouza/zoxide)
+- [fzf](https://github.com/junegunn/fzf)
 
 ### ZSH Plugins
 
@@ -21,7 +23,3 @@
 ## Applications
 
 - [devtoys](https://github.com/DevToys-app/DevToys)
-
-## Tools to investigate
-
-- [zoxide](https://github.com/ajeetdsouza/zoxide)
