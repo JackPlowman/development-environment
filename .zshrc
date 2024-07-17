@@ -52,11 +52,14 @@ export SSO_LOGIN_URL=https://login.apigee.com
 eval "$(oh-my-posh init zsh --config '~./development-configuration/config/oh-my-posh.json')"
 ## The Fuck
 eval $(thefuck --alias)
+# Zoxide
+eval "$(zoxide init zsh)"
 # ------------------------------------------------------------------------#
 # Aliases
 alias reload="source ~/.zshrc"
 alias lg=lazygit
 alias python='python3.9'
+alias cd=z
 
 # Aliases for Development Scripts
 alias commit="bash ~/development-configuration/scripts/commit_and_push.sh"
