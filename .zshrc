@@ -106,7 +106,6 @@ alias python='python3.9'
 
 # Aliases for Development Scripts
 alias commit="bash ~/development-environment/scripts/commit_and_push.sh"
-alias deploy="bash ~/development-environment/scripts/commit_and_deploy.sh"
 alias branch_cleanup="bash ~/development-environment/scripts/remove_all_branches_except_main.sh"
 alias rebase="bash ~/development-environment/scripts/rebase_and_push.sh"
 alias main="bash ~/development-environment/scripts/checkout_main_and_pull.sh"
