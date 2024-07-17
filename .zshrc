@@ -1,8 +1,10 @@
 # Path to my oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-#ZSH configuration
+# ZSH configuration
 zstyle ':omz:update' mode auto
+
+# ZSH Plugins
 plugins=(
     git
     zsh-autosuggestions
@@ -11,6 +13,18 @@ plugins=(
     poetry-env
     thefuck
 )
+# Check if compinit has been called
+if [[ -n ${ZSH_VERSION-} ]]; then
+  if ! command -v compinit > /dev/null; then
+    autoload -U +X compinit && if [[ ${ZSH_DISABLE_COMPFIX-} = true ]]; then
+      compinit -u
+    else
+      compinit
+    fi
+  fi
+  autoload -U +X bashcompinit && bashcompinit
+fi
+
 # Initalise Oh My ZSH
 source $ZSH/oh-my-zsh.sh
 
