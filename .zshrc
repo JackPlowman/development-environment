@@ -49,7 +49,7 @@ export SSO_LOGIN_URL=https://login.apigee.com
 # ------------------------------------------------------------------------#
 # Tools Setup
 ## Oh My Posh
-eval "$(oh-my-posh init zsh --config '~./development-environment/config/oh-my-posh.json')"
+eval "$(oh-my-posh init zsh --config '~./development-configuration/config/oh-my-posh.json')"
 ## The Fuck
 eval $(thefuck --alias)
 # ------------------------------------------------------------------------#
@@ -57,10 +57,9 @@ eval $(thefuck --alias)
 alias reload="source ~/.zshrc"
 alias lg=lazygit
 alias python='python3.9'
-alias cd=zoxide
 
 # Aliases for Development Scripts
-alias commit="bash ~/development-environment/scripts/commit_and_push.sh"
-alias branch_cleanup="bash ~/development-environment/scripts/remove_all_branches_except_main.sh"
-alias rebase="bash ~/development-environment/scripts/rebase_and_push.sh"
-alias main="bash ~/development-environment/scripts/checkout_main_and_pull.sh"
+alias commit="bash ~/development-configuration/scripts/commit_and_push.sh"
+alias branch_cleanup="bash ~/development-configuration/scripts/remove_all_branches_except_main.sh"
+alias rebase="bash ~/development-configuration/scripts/rebase_and_push.sh"
+alias main="bash ~/development-configuration/scripts/checkout_main_and_pull.sh"
