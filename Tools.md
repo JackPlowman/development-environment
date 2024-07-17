@@ -18,6 +18,10 @@
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
+## Applications
+
+- [devtoys](https://github.com/DevToys-app/DevToys)
+
 ## Tools to investigate
 
 - [zoxide](https://github.com/ajeetdsouza/zoxide)
