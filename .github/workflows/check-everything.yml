@@ -20,17 +20,17 @@ jobs:
       - name: EditorConfig Check
         uses: editorconfig-checker/action-editorconfig-checker@v2
 
-  check-shellcheck:
+  check-shell:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: ShellCheck
-        uses: ludeeus/action-shellcheck@2.0.0
+      - name: Check Shell scripts
+        uses: luizm/action-sh-checker@master
         with:
-          ignore_names: .zshrc
+          sh_checker_exclude: ".zshrc"
 
   check-markdown-code-quality:
     name: Check Markdown Code Quality
