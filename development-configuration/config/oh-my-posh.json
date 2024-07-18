@@ -121,6 +121,9 @@
           "foreground": "#000000",
           "invert_powerline": true,
           "style": "diamond",
+          "properties": {
+            "time_format": "01/02/06 15:04:05"
+          },
           "template": " {{ .CurrentDate | date .Format }} ",
           "trailing_diamond": "\ue0b0",
           "type": "time"
