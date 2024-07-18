@@ -51,7 +51,7 @@
             "fetch_version": true
           },
           "style": "powerline",
-          "template": " {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} \ue718 ",
+          "template": " {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}  ",
           "type": "node"
         },
         {
@@ -64,22 +64,20 @@
             "fetch_virtual_env": false
           },
           "style": "powerline",
-          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} \ue235 ",
+          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
           "type": "python"
         },
         {
-          "background_templates": [
-            "{{if contains \"default\" .Profile}}#FFA400{{end}}",
-            "{{if contains \"jan\" .Profile}}#f1184c{{end}}"
-          ],
+          "background": "#cb5400",
           "foreground": "#ffffff",
           "invert_powerline": true,
           "powerline_symbol": "\ue0b2",
+          "leading_powerline_symbol":  "\ue0b2",
           "properties": {
             "display_default": false
           },
           "style": "powerline",
-          "template": " {{ .Profile }}{{ if .Region }}@{{ .Region }}{{ end }} \ue7ad ",
+          "template": " {{ .Profile }}{{ if .Region }}@{{ .Region }}{{ end }} ",
           "type": "aws"
         },
         {
@@ -92,13 +90,14 @@
           "properties": {
             "fetch_version": true
           },
-          "template": "{{ .WorkspaceName }}{{ if .Version }} {{ .Version }} {{ end }} "
+          "template": "  {{ .WorkspaceName }}{{ if .Version }} {{ .Version }} {{ end }} "
         },
         {
           "background": "#c4a000",
           "foreground": "#000000",
           "invert_powerline": true,
           "powerline_symbol": "\ue0b2",
+          "leading_diamond": "\ue0b2",
           "style": "powerline",
           "template": " {{ .FormattedMs }} \uf252 ",
           "type": "executiontime"
@@ -106,9 +105,10 @@
         {
           "background": "transparent",
           "background_templates": ["{{ if gt .Code 0 }}#cc2222{{ end }}"],
+          "leading_diamond": "\ue0b2",
+          "powerline_symbol": "\ue0b2",
           "foreground": "#d3d7cf",
           "invert_powerline": true,
-          "powerline_symbol": "\ue0b2",
           "properties": {
             "always_enabled": true
           },
@@ -120,12 +120,14 @@
           "background": "#d3d7cf",
           "foreground": "#000000",
           "invert_powerline": true,
+          "powerline_symbol": "\ue0b2",
           "style": "diamond",
           "properties": {
             "time_format": "01/02/06 15:04:05"
           },
           "template": " {{ .CurrentDate | date .Format }} ",
           "trailing_diamond": "\ue0b0",
+          "leading_diamond": "\ue0b2",
           "type": "time"
         }
       ],
