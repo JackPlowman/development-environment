@@ -5,8 +5,8 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#3465a4",
-          "foreground": "#e4e4e4",
+          "background": "#78a8e6",
+          "foreground": "#000000",
           "powerline_symbol": "\ue0b0",
           "properties": {
             "home_icon": "~",
