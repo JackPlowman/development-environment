@@ -21,7 +21,7 @@ jobs:
         uses: editorconfig-checker/action-editorconfig-checker@v2
 
   check-code-quality:
-    name: Check Code Format
+    name: Check Code Quality
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
