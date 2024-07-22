@@ -105,7 +105,9 @@
           "type": "executiontime"
         },
         {
-          "background_templates": ["{{ if gt .Code 0 }}#cc2222{{ else }}transparent{{ end }}"],
+          "background_templates": [
+            "{{ if gt .Code 0 }}#cc2222{{ else }}transparent{{ end }}"
+          ],
           "foreground": "#000000",
           "invert_powerline": true,
           "powerline_symbol": "\ue0b2",
@@ -115,7 +117,7 @@
           },
           "style": "diamond",
           "template": " {{ if gt .Code 0 }}{{ reason .Code }}{{ else }}{{ end }} ",
-          "type":"status"
+          "type": "status"
         },
         {
           "background": "#d3d7cf",
