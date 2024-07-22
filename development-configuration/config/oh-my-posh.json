@@ -47,10 +47,11 @@
           "foreground": "#ffffff",
           "invert_powerline": true,
           "powerline_symbol": "\ue0b2",
+          "leading_diamond": "\ue0b2",
           "properties": {
             "fetch_version": true
           },
-          "style": "powerline",
+          "style": "diamond",
           "template": " {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}  ",
           "type": "node"
         },
@@ -59,11 +60,12 @@
           "foreground": "#111111",
           "invert_powerline": true,
           "powerline_symbol": "\ue0b2",
+          "leading_diamond": "\ue0b2",
           "properties": {
             "display_mode": "files",
             "fetch_virtual_env": false
           },
-          "style": "powerline",
+          "style": "diamond",
           "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
           "type": "python"
         },
@@ -72,17 +74,17 @@
           "foreground": "#ffffff",
           "invert_powerline": true,
           "powerline_symbol": "\ue0b2",
-          "leading_powerline_symbol":  "\ue0b2",
+          "leading_powerline_symbol": "\ue0b2",
           "properties": {
             "display_default": false
           },
-          "style": "powerline",
+          "style": "diamond",
           "template": " {{ .Profile }}{{ if .Region }}@{{ .Region }}{{ end }} ",
           "type": "aws"
         },
         {
           "type": "terraform",
-          "style": "powerline",
+          "style": "diamond",
           "powerline_symbol": "\ue0b2",
           "foreground": "#000000",
           "background": "#ebcc34",
@@ -98,21 +100,22 @@
           "invert_powerline": true,
           "powerline_symbol": "\ue0b2",
           "leading_diamond": "\ue0b2",
-          "style": "powerline",
+          "style": "diamond",
           "template": " {{ .FormattedMs }} \uf252 ",
           "type": "executiontime"
         },
         {
-          "background": "transparent",
-          "background_templates": ["{{ if gt .Code 0 }}#cc2222{{ end }}"],
-          "leading_diamond": "\ue0b2",
-          "powerline_symbol": "\ue0b2",
-          "foreground": "#d3d7cf",
+          "background_templates": [
+            "{{ if gt .Code 0 }}#cc2222{{ else }}transparent{{ end }}"
+          ],
+          "foreground": "#000000",
           "invert_powerline": true,
+          "powerline_symbol": "\ue0b2",
+          "leading_diamond": "\ue0b2",
           "properties": {
-            "always_enabled": true
+            "always_enabled": false
           },
-          "style": "powerline",
+          "style": "diamond",
           "template": " {{ if gt .Code 0 }}{{ reason .Code }}{{ else }}{{ end }} ",
           "type": "status"
         },
