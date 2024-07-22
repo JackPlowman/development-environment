@@ -34,5 +34,5 @@ jobs:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ERROR_ON_MISSING_EXEC_BIT: true
-          YAML_CONFIG_FILE: ./.github/linter-config/.yaml-lint.yml
+          YAML_CONFIG_FILE: super-linter-configs/.yaml-lint.yml
           YAML_ERROR_ON_WARNING: true
