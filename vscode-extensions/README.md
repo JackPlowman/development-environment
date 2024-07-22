@@ -1,4 +1,4 @@
-# VSCode Extensions
+# Visual Studio Code Extensions
 
 ## How to get installed extensions
 
