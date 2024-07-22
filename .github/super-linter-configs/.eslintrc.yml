@@ -14,17 +14,9 @@ plugins:
   - "@typescript-eslint"
 
 overrides:
-  # JSON files
-  - files:
-      - "*.json"
-    extends:
-      - plugin:jsonc/recommended-with-comments
-    parser: jsonc-eslint-parser
-    parserOptions:
-      jsonSyntax: JSON
-
   # JSONC files
   - files:
+      - "*.json"
       - "*.jsonc"
     extends:
       - plugin:jsonc/recommended-with-jsonc
