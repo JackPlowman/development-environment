@@ -1,0 +1,18 @@
+# Warp Launch Configuration
+#
+#
+# Use this to start a certain configuration of windows, tabs, and panes.
+# Open the launch configuration palette to access and open any launch configuration.
+#
+# This file defines your launch configuration.
+# More on how to do so here:
+# https://docs.warp.dev/features/session-management/launch-configurations
+#
+---
+name: Personal
+windows:
+  - tabs:
+      - title: DevelopmentEnvironment
+        color: blue
+        layout:
+          cwd: /Users/jackplowman/Projects/development-environment
