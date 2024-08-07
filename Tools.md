@@ -14,6 +14,7 @@
 - [lazygit](https://github.com/jesseduffield/lazygit)
 - [zoxide](https://github.com/ajeetdsouza/zoxide)
 - [fzf](https://github.com/junegunn/fzf)
+- [eza](https://github.com/eza-community/eza?tab=readme-ov-file)
 
 ### Zsh Plugins
 
