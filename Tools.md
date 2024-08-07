@@ -19,6 +19,7 @@
 - [fzf](https://github.com/junegunn/fzf)
 - [eza](https://github.com/eza-community/eza?tab=readme-ov-file)
 - [bat](https://github.com/sharkdp/bat)
+- [granted](https://github.com/common-fate/granted)
 
 #### Zsh Plugins
 
@@ -29,11 +30,8 @@
 
 - [devtoys](https://github.com/DevToys-app/DevToys)
 
-
 ## Tools to look into
 
-### Python
-
-#### Python Tools
+### Python Tools
 
 - [wat](https://github.com/igrek51/wat)
