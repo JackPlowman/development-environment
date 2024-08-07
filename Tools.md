@@ -15,6 +15,7 @@
 - [zoxide](https://github.com/ajeetdsouza/zoxide)
 - [fzf](https://github.com/junegunn/fzf)
 - [eza](https://github.com/eza-community/eza?tab=readme-ov-file)
+- [bat](https://github.com/sharkdp/bat)
 
 ### Zsh Plugins
 
