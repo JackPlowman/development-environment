@@ -12,7 +12,11 @@
 name: Personal
 windows:
   - tabs:
-      - title: DevelopmentEnvironment
+      - title: Jack Plowman
+        color: red
+        layout:
+          cwd: /Users/jackplowman/Projects/JackPlowman
+      - title: Development Environment
         color: blue
         layout:
           cwd: /Users/jackplowman/Projects/development-environment
