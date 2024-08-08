@@ -22,3 +22,29 @@ Then start a new terminal session, open the terminal and run the following comma
 ```bash
 source ~/.zshrc
 ```
+
+## Homebrew
+
+### Create brewfile
+
+To create a brewfile, run the following command:
+
+```bash
+brew bundle dump
+```
+
+### Install from brewfile
+
+To install from the brewfile, run the following command:
+
+```bash
+brew bundle install
+```
+
+## Visual Studio Code Extensions
+
+To install from the extensions file, run the following command:
+
+```bash
+code --install-extension vscode-extensions
+```
