@@ -1,7 +1,8 @@
 # Tools
 
-
 ## Tools I Use
+
+These are tools I am using and have found useful.
 
 ### Terminal
 
@@ -31,6 +32,12 @@
 - [devtoys](https://github.com/DevToys-app/DevToys)
 
 ## Tools to look into
+
+These are tools I want to look into.
+
+### MacOS Windows Manager
+
+- [Aerospace](https://github.com/nikitabobko/AeroSpace)
 
 ### Python Tools
 
