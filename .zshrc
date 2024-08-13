@@ -54,6 +54,8 @@ eval "$(oh-my-posh init zsh --config '~./development-configuration/config/oh-my-
 eval $(thefuck --alias)
 # Zoxide
 eval "$(zoxide init zsh)"
+# Fzf
+source <(fzf --zsh)
 # ------------------------------------------------------------------------#
 # Aliases
 alias reload="source ~/.zshrc"
