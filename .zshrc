@@ -54,8 +54,10 @@ eval "$(oh-my-posh init zsh --config '~./development-configuration/config/oh-my-
 eval $(thefuck --alias)
 # Zoxide
 eval "$(zoxide init zsh)"
-# Fzf
+# Fzf Completions
 source <(fzf --zsh)
+# Eza Completions
+export FPATH="/opt/homebrew/bin/eza/completions/zsh:$FPATH"
 # ------------------------------------------------------------------------#
 # Aliases
 alias reload="source ~/.zshrc"
