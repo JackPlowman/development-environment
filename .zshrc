@@ -69,8 +69,7 @@ alias cd=z
 alias cat="bat"
 alias show="eza"
 alias show_tree="eza -T"
-
-
+alias ls="eza"
 
 # Aliases for Development Scripts
 alias commit="bash ~/development-configuration/scripts/commit_and_push.sh"
