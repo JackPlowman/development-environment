@@ -20,3 +20,7 @@ windows:
         color: blue
         layout:
           cwd: /Users/jackplowman/Projects/development-environment
+      - title: Python Playground
+        color: green
+        layout:
+          cwd: /Users/jackplowman/Projects/python-playground
