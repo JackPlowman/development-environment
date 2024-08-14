@@ -58,6 +58,8 @@ eval "$(zoxide init zsh)"
 source <(fzf --zsh)
 # Eza Completions
 export FPATH="/opt/homebrew/bin/eza/completions/zsh:$FPATH"
+# Set manpath
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 # ------------------------------------------------------------------------#
 # Aliases
 alias reload="source ~/.zshrc"
@@ -67,6 +69,8 @@ alias cd=z
 alias cat="bat"
 alias show="eza"
 alias show_tree="eza -T"
+
+
 
 # Aliases for Development Scripts
 alias commit="bash ~/development-configuration/scripts/commit_and_push.sh"
