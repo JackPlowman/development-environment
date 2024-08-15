@@ -15,12 +15,12 @@ windows:
       - title: Jack Plowman
         color: red
         layout:
-          cwd: /Users/jackplowman/Projects/JackPlowman
+          cwd: /Users/jackplowman/Projects/Personal/JackPlowman
       - title: Development Environment
         color: blue
         layout:
-          cwd: /Users/jackplowman/Projects/development-environment
+          cwd: /Users/jackplowman/Projects/Personal/development-environment
       - title: Python Playground
         color: green
         layout:
-          cwd: /Users/jackplowman/Projects/python-playground
+          cwd: /Users/jackplowman/Projects/Personal/python-playground
