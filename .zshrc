@@ -62,6 +62,9 @@ source <(fzf --zsh)
 export FPATH="/opt/homebrew/bin/eza/completions/zsh:$FPATH"
 # Set manpath
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+# Set up Terraform Completions
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
 # ------------------------------------------------------------------------#
 # Aliases
 alias reload="source ~/.zshrc"
