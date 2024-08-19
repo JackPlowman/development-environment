@@ -1,3 +1,3 @@
 #!/bin/bash
 
-git branch | grep -v "main" | xargs git branch -D
+git branch | grep -v "main" | grep -v "master" | xargs git branch -D
