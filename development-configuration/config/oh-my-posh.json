@@ -43,6 +43,20 @@
       "alignment": "right",
       "segments": [
         {
+          "type": "shell",
+          "style": "powerline",
+          "background": "#2e9599",
+          "foreground": "#111111",
+          "invert_powerline": true,
+          "powerline_symbol": "\ue0b2",
+          "leading_diamond": "\ue0b2",
+          "properties": {
+            "mapped_shell_names": {
+              "pwsh": "PS"
+            }
+          }
+        },
+        {
           "background": "#689f63",
           "foreground": "#ffffff",
           "invert_powerline": true,
@@ -51,7 +65,7 @@
           "properties": {
             "fetch_version": true
           },
-          "style": "diamond",
+          "style": "powerline",
           "template": " {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}  ",
           "type": "node"
         },
@@ -65,7 +79,7 @@
             "display_mode": "files",
             "fetch_virtual_env": false
           },
-          "style": "diamond",
+          "style": "powerline",
           "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
           "type": "python"
         },
@@ -84,7 +98,7 @@
         },
         {
           "type": "terraform",
-          "style": "diamond",
+          "style": "powerline",
           "powerline_symbol": "\ue0b2",
           "foreground": "#000000",
           "background": "#ebcc34",
@@ -100,7 +114,7 @@
           "invert_powerline": true,
           "powerline_symbol": "\ue0b2",
           "leading_diamond": "\ue0b2",
-          "style": "diamond",
+          "style": "powerline",
           "template": " {{ .FormattedMs }} \uf252 ",
           "type": "executiontime"
         },
@@ -115,7 +129,7 @@
           "properties": {
             "always_enabled": false
           },
-          "style": "diamond",
+          "style": "powerline",
           "template": " {{ if gt .Code 0 }}{{ reason .Code }}{{ else }}{{ end }} ",
           "type": "status"
         },
@@ -130,7 +144,7 @@
           },
           "template": " {{ .CurrentDate | date .Format }} ",
           "trailing_diamond": "\ue0b0",
-          "leading_diamond": "\ue0b2",
+
           "type": "time"
         }
       ],
