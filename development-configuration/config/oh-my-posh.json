@@ -47,20 +47,6 @@
       "alignment": "right",
       "segments": [
         {
-          "type": "shell",
-          "style": "powerline",
-          "background": "#2e9599",
-          "foreground": "#111111",
-          "invert_powerline": true,
-          "powerline_symbol": "\ue0b2",
-          "leading_diamond": "\ue0b2",
-          "properties": {
-            "mapped_shell_names": {
-              "pwsh": "PS"
-            }
-          }
-        },
-        {
           "type": "node",
           "style": "powerline",
           "background": "#689f63",
@@ -136,6 +122,20 @@
             "always_enabled": false
           },
           "template": " {{ if gt .Code 0 }}{{ reason .Code }}{{ else }}{{ end }} "
+        },
+        {
+          "type": "shell",
+          "style": "powerline",
+          "background": "#2e9599",
+          "foreground": "#111111",
+          "invert_powerline": true,
+          "powerline_symbol": "\ue0b2",
+          "leading_diamond": "\ue0b2",
+          "properties": {
+            "mapped_shell_names": {
+              "pwsh": "PS"
+            }
+          }
         },
         {
           "type": "time",
