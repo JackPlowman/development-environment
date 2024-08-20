@@ -75,7 +75,7 @@
         },
         {
           "type": "aws",
-          "style": "diamond",
+          "style": "powerline",
           "background": "#cb5400",
           "foreground": "#ffffff",
           "invert_powerline": true,
