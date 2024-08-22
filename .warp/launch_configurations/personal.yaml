@@ -24,3 +24,7 @@ windows:
         color: green
         layout:
           cwd: /Users/jackplowman/Projects/Personal/python-playground
+      - title: Ideas
+        color: yellow
+        layout:
+          cwd: /Users/jackplowman/Projects/Personal/development-ideas
