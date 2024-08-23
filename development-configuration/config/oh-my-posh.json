@@ -124,6 +124,15 @@
           "template": " {{ if gt .Code 0 }}{{ reason .Code }}{{ else }}{{ end }} "
         },
         {
+          "type": "go",
+          "style": "powerline",
+          "foreground": "#ffffff",
+          "background": "#7FD5EA",
+          "template": " ‭ﳑ {{ .Full }} ",
+          "invert_powerline": true,
+          "powerline_symbol": "\ue0b2"
+        },
+        {
           "type": "shell",
           "style": "powerline",
           "background": "#2e9599",
