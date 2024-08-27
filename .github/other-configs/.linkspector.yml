@@ -1,5 +1,6 @@
 files:
   - README.md
-  - LICENSE
+  - TODO.md
+  - Tools.md
 aliveStatusCodes:
   - 200
