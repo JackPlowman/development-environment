@@ -1,0 +1,6 @@
+files:
+  - README.md
+  - TODO.md
+  - Tools.md
+aliveStatusCodes:
+  - 200
