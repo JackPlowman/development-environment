@@ -40,6 +40,8 @@ jobs:
       - name: Check Markdown links
         uses: UmbrellaDocs/action-linkspector@v1.1.3
         with:
+          github_token: ${{ secrets.GH_TOKEN }}
+          config_file: .github/other-configs/.linkspector.yaml
           reporter: github-pr-review
           fail_on_error: true
-          config_file: .github/other-configs/.linkspector.yaml
+          filter_mode: nofilter

@@ -1,6 +1,8 @@
 files:
   - README.md
   - TODO.md
-  - Tools.md
+  - LICENSE
+  - TOOLS.md
+  - vscode-extensions/README.md
 aliveStatusCodes:
   - 200
