@@ -45,14 +45,18 @@ export PATH="$PATH:/usr/local/bin/docker"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-# Go (Golang)
+## Go (Golang)
 export PATH="$PATH:$HOME/go/bin"
 export GOPATH="$HOME/Projects/Personal"
+## Starship
+export STARSHIP_CONFIG=~/development-configuration/starship.toml
 # ------------------------------------------------------------------------#
 # Custom Environment Variables
 export SSO_LOGIN_URL=https://login.apigee.com
 # ------------------------------------------------------------------------#
 # Tools Setup
+## Starship
+source ~/development-configuration/zsh-other-files/starship.zsh
 ## The Fuck
 eval $(thefuck --alias)
 # Zoxide
