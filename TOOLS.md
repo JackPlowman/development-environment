@@ -30,6 +30,7 @@ These are tools I am using and have found useful.
 ### Applications
 
 - [devtoys](https://github.com/DevToys-app/DevToys)
+- [freeter](https://github.com/FreeterApp/Freeter)
 
 ## Tools to look into
 
