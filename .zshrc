@@ -53,8 +53,6 @@ export GOPATH="$HOME/Projects/Personal"
 export SSO_LOGIN_URL=https://login.apigee.com
 # ------------------------------------------------------------------------#
 # Tools Setup
-## Oh My Posh
-eval "$(oh-my-posh init zsh --config '~./development-configuration/config/oh-my-posh.json')"
 ## The Fuck
 eval $(thefuck --alias)
 # Zoxide

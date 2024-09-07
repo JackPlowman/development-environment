@@ -10,8 +10,6 @@ These are tools I am using and have found useful.
 
 #### Terminal Theme
 
-- [oh-my-posh](https://github.com/jandedobbeleer/oh-my-posh)
-
 #### Terminal Tools
 
 - [thefuck](https://github.com/nvbn/thefuck)
