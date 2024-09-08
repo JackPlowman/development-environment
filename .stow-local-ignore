@@ -7,4 +7,6 @@ Brewfile
 LICENSE
 README.md
 TODO.md
-Tools.md
+TOOLS.md
+githooks
+Justfile
