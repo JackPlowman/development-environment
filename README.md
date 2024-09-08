@@ -40,11 +40,3 @@ To install from the brewfile, run the following command:
 ```bash
 brew bundle install
 ```
-
-## Visual Studio Code Extensions
-
-To install from the extensions file, run the following command:
-
-```bash
-code --install-extension vscode-extensions
-```
