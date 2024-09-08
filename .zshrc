@@ -70,6 +70,8 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 # Set up Terraform Completions
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
+# Set up Git/FZF completions
+source ~/development-configuration/zsh-other-files/fzf-git-shortcuts.zsh
 # ------------------------------------------------------------------------#
 # Aliases
 alias reload="source ~/.zshrc"
@@ -80,6 +82,7 @@ alias cat="bat"
 alias show="eza"
 alias show_tree="eza -T"
 alias ls="eza"
+alias branch="_fzf_git_each_ref --no-multi | xargs git checkout"
 
 # Aliases for Development Scripts
 alias commit="bash ~/development-configuration/scripts/commit_and_push.sh"
