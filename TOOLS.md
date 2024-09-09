@@ -4,6 +4,10 @@
 
 These are tools I am using and have found useful.
 
+### Fonts
+
+- [FiraCode](https://github.com/tonsky/FiraCode)
+
 ### Terminal
 
 - [Warp](https://github.com/warpdotdev/Warp)
