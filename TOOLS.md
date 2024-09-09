@@ -10,6 +10,8 @@ These are tools I am using and have found useful.
 
 #### Terminal Theme
 
+- [Starship](https://github.com/starship/starship)
+
 #### Terminal Tools
 
 - [thefuck](https://github.com/nvbn/thefuck)
