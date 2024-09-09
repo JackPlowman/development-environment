@@ -56,6 +56,7 @@ export SSO_LOGIN_URL=https://login.apigee.com
 # ------------------------------------------------------------------------#
 # Tools Setup
 ## Starship
+eval "$(starship init zsh)"
 source ~/development-configuration/zsh-other-files/starship.zsh
 ## The Fuck
 eval $(thefuck --alias)
