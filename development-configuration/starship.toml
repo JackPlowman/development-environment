@@ -79,7 +79,7 @@ style = "bg:#86BBD8"
 format = '[ $symbol ($version) ]($style)'
 
 [aws]
-symbol = " "
+symbol = "  "
 style = "bg:#86BBD8"
 format = '[$symbol($profile )(\($region\) )(\[$duration\] )]($style)'
 
