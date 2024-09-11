@@ -85,7 +85,7 @@ alias show_tree="eza -T"
 alias ls="eza"
 alias branch="_fzf_git_each_ref --no-multi | xargs git checkout"
 # Timeout Aliases
-alias aws="bash ~/development-configuration/scripts/aws_check.sh $1"
+alias aws="bash ~/development-configuration/scripts/aws_check_timeout.sh && aws $1"
 # Aliases for Development Scripts
 alias commit="bash ~/development-configuration/scripts/commit_and_push.sh"
 alias branch_cleanup="bash ~/development-configuration/scripts/remove_all_branches_except_main.sh"
