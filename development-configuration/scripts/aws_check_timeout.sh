@@ -8,12 +8,12 @@ CURRENT_EPOCH=$(date +%s)
 COMPARISON=$((CURRENT_EPOCH > EXPIRATION_EPOCH))
 # If the comparison is true, then the session is expired
 if [ $COMPARISON -eq 1 ]; then
-    echo "AWS session has expired."
-    exit 1
+  echo "AWS session has expired."
+  exit 1
 fi
 DIFFERENCE=$((EXPIRATION_EPOCH - CURRENT_EPOCH))
 # If the difference is less than 1 minutes, then the session should be refreshed first
 if [ $DIFFERENCE -lt 60 ]; then
-    echo "AWS session has less than 1 minute remaining. Refresh Session."
-    exit 2
+  echo "AWS session has less than 1 minute remaining. Refresh Session."
+  exit 2
 fi
