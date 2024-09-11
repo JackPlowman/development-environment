@@ -8,16 +8,19 @@ $directory\
 [](fg:#DA627D bg:#FCA17D)\
 $git_branch\
 $git_status\
-[](fg:#FCA17D bg:#86BBD8)\
+$git_metrics\
+$git_state\
 [ ](fg:#33658A)\
 """
 
 right_format = """
-[](#9A348E)\
+[](#33658A)\
 $golang\
 $nodejs\
 $python\
 $aws\
+$cmd_duration\
+$status\
 $time\
 [ ](fg:#33658A)\
 """
@@ -32,7 +35,7 @@ add_newline = true
 show_always = true
 style_user = "bg:#9A348E"
 style_root = "bg:#9A348E"
-format = '[$user ]($style)'
+format = '[ $user ]($style)'
 disabled = false
 
 [directory]
@@ -63,15 +66,30 @@ format = '[ $symbol $branch ]($style)'
 style = "bg:#FCA17D"
 format = '[$all_status$ahead_behind ]($style)'
 
+[git_state]
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
+cherry_pick = '[🍒 PICKING](bold red)'
+
+[git_metrics]
+disabled = false
+added_style = "bg:#FCA17D bold green"
+deleted_style = "bg:#FCA17D bold red"
+format='([ +$added ]($added_style))([ -$deleted ]($deleted_style))'
+
 # ------------------------------------------------------------------------------
 # Right Side
 # ------------------------------------------------------------------------------
 
 [time]
 disabled = false
-time_format = "%R" # Hour:Minute Format
+time_format = "%R"             # Hour:Minute Format
 style = "bg:#33658A"
 format = '[ ♥ $time ]($style)'
+
+[status]
+disabled = false
+format = '[ $symbol $status ]($style)'
+style='bold red bg:#33658A'
 
 [python]
 symbol = " "
@@ -92,3 +110,7 @@ format = '[ $symbol ($version) ]($style)'
 symbol = ""
 style = "bg:#86BBD8"
 format = '[ $symbol ($version) ]($style)'
+
+[cmd_duration]
+style = "bg:#33658A"
+format = '[ $duration ]($style)'
