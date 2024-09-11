@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Fix the format so we can use it
-MODIFIED_DATE=$(echo $AWS_SESSION_EXPIRATION | sed 's/:00/00/')
+MODIFIED_DATE=$(echo "${AWS_SESSION_EXPIRATION}" | sed 's/:00/00/')
 
 # ISO 8601 date format
-EXPIRATION_EPOCH=$(date -j -f "%Y-%m-%dT%H:%M:%S%z" $MODIFIED_DATE +"%s")
+EXPIRATION_EPOCH=$(date -j -f "%Y-%m-%dT%H:%M:%S%z" "${MODIFIED_DATE}" +"%s")
 
 # Get the current epoch time
 CURRENT_EPOCH=$(date +%s)
