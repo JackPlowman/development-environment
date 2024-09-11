@@ -1,0 +1,2 @@
+echo $AWS_SESSION_EXPIRATION
+
