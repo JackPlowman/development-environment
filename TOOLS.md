@@ -1,5 +1,21 @@
 # Tools
 
+## Table of Contents
+
+- [Tools](#tools)
+  - [Table of Contents](#table-of-contents)
+  - [Tools I Use](#tools-i-use)
+    - [Fonts](#fonts)
+    - [Terminal](#terminal)
+      - [Terminal Theme](#terminal-theme)
+      - [Terminal Tools](#terminal-tools)
+      - [Zsh Plugins](#zsh-plugins)
+    - [Applications](#applications)
+    - [Web Applications](#web-applications)
+  - [Tools to look into](#tools-to-look-into)
+    - [MacOS Windows Manager](#macos-windows-manager)
+    - [Python Tools](#python-tools)
+
 ## Tools I Use
 
 These are tools I am using and have found useful.
@@ -25,6 +41,7 @@ These are tools I am using and have found useful.
 - [eza](https://github.com/eza-community/eza?tab=readme-ov-file)
 - [bat](https://github.com/sharkdp/bat)
 - [granted](https://github.com/common-fate/granted)
+- [Graphite Cli](https://graphite.dev/docs/graphite-cli)
 
 #### Zsh Plugins
 
@@ -35,6 +52,10 @@ These are tools I am using and have found useful.
 
 - [devtoys](https://github.com/DevToys-app/DevToys)
 - [freeter](https://github.com/FreeterApp/Freeter)
+
+### Web Applications
+
+- [Graphite](https://graphite.dev/)
 
 ## Tools to look into
 
