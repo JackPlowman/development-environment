@@ -1,9 +1,11 @@
 # Pull Request
 
+<!-- Please use British English for spelling and terminology where possible. However, if you're more comfortable using another variant don't worry about it! -->
+
 ## Description
 
-A description of the pull request.
+Write a short description of the changes made in this pull request.
 
-## Why make this change?
+## What changed?
 
-A description of the reason for the change.
+List important changes here. Changes within a file should be an indented bullet point.
