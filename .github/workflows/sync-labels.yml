@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - .github/other-configurations/labels.yml
+      - .github/other-configs/labels.yml
 
 permissions:
   contents: read
