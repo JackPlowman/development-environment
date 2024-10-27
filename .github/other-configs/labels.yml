@@ -38,7 +38,7 @@
   description: Pull requests that update Just code
 - color: 00ff44
   name: shell
-  description: Pull requests that update Shell code
+  description: Pull requests that update Shell code (bash or zsh)
 - color: 1900ff
   name: markdown
   description: Pull requests that update Markdown documentation
