@@ -40,7 +40,7 @@
   name: shell
   description: Pull requests that update Shell code
 - color: 1900ff
-  name: Markdown
+  name: markdown
   description: Pull requests that update Markdown documentation
 # Components
 - color: f27100
