@@ -88,7 +88,7 @@ alias ls="eza"
 alias branch="_fzf_git_each_ref --no-multi | xargs git checkout"
 # Aliases for Development Scripts
 alias commit="bash ~/development-configuration/scripts/commit_and_push.sh"
-alias branch_cleanup="bash ~/development-configuration/scripts/remove_all_branches_except_main.sh"
+alias branch_cleanup="bash ~/development-configuration/scripts/remove_all_branches_except_default.sh"
 alias rebase="bash ~/development-configuration/scripts/rebase_and_push.sh"
 alias main="bash ~/development-configuration/scripts/checkout_main_and_pull.sh"
 alias master="bash ~/development-configuration/scripts/checkout_master_and_pull.sh"
