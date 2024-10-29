@@ -2,9 +2,11 @@
 # Prettier
 # ------------------------------------------------------------------------------
 
+# Check files are prettier formatted
 prettier-check:
     prettier . --check
 
+# Format files with prettier
 prettier-format:
     prettier . --check --write
 
@@ -12,11 +14,21 @@ prettier-format:
 # Justfile
 # ------------------------------------------------------------------------------
 
-format:
+# Format the justfile
+just-format:
     just --fmt --unstable
 
-format-check:
+# Check if the justfile is formatted correctly
+just-format-check:
     just --fmt --check --unstable
+
+# ------------------------------------------------------------------------------
+# Git Leaks
+# ------------------------------------------------------------------------------
+
+# Detect secrets in the repos
+gitleaks-detect:
+    gitleaks detect --source .
 
 # ------------------------------------------------------------------------------
 # Git Hooks
