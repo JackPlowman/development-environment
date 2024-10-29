@@ -59,4 +59,4 @@ jobs:
         uses: extractions/setup-just@v2
 
       - name: Check Justfile Format
-        run: just format-check
+        run: just just-format-check
