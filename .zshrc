@@ -86,6 +86,7 @@ alias show="eza"
 alias show_tree="eza -T"
 alias ls="eza"
 alias branch="_fzf_git_each_ref --no-multi | xargs git checkout"
+alias pretty="prettier . --check --write"
 # Aliases for Development Scripts
 alias commit="bash ~/development-configuration/scripts/commit_and_push.sh"
 alias branch_cleanup="bash ~/development-configuration/scripts/remove_all_branches_except_default.sh"
