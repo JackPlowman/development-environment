@@ -13,3 +13,4 @@
 `rebase` - Rebase the current branch with the main branch.
 `main` - Checkout to the main branch and pull.
 `master` - Checkout to the main branch and pull.
+`checkout` - Checkout to a branch.
