@@ -7,7 +7,7 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "features": { "inline_completion_provider": "supermaven" },
+  "features": { "inline_completion_provider": "copilot" },
   "base_keymap": "VSCode",
   "theme": "Dracula",
   "ui_font_size": 16,
