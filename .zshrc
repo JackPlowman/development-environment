@@ -6,18 +6,18 @@ zstyle ':omz:update' mode auto
 
 # ZSH Plugins
 plugins=(
-    aws
-    terraform
-    git
-    zsh-autosuggestions
-    zsh-syntax-highlighting
-    poetry
-    poetry-env
-    thefuck
+  aws
+  terraform
+  git
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  poetry
+  poetry-env
+  thefuck
 )
 # Check if compinit has been called
 if [[ -n ${ZSH_VERSION-} ]]; then
-  if ! command -v compinit > /dev/null; then
+  if ! command -v compinit >/dev/null; then
     autoload -U +X compinit && if [[ ${ZSH_DISABLE_COMPFIX-} = true ]]; then
       compinit -u
     else
@@ -30,7 +30,7 @@ fi
 # Initalise Oh My ZSH
 source $ZSH/oh-my-zsh.sh
 # Remove aws_prompt_info from right = https://github.com/ohmyzsh/ohmyzsh/discussions/10726
-RPROMPT="${RPROMPT//\$\(aws_prompt_info\)}"
+RPROMPT="${RPROMPT//\$\(aws_prompt_info\)/}"
 # User configuration
 # ------------------------------------------------------------------------#
 # Program Environment Variables/PATH updates
@@ -44,8 +44,8 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 export PATH="$PATH:/usr/local/bin/docker"
 ## NVM
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 ## Go (Golang)
 export PATH="$PATH:$HOME/go/bin"
 export GOPATH="$HOME/Projects/Personal"
@@ -55,7 +55,7 @@ export SSO_LOGIN_URL=https://login.apigee.com
 # ------------------------------------------------------------------------#
 # Tools Setup
 ## Oh My Posh
-eval "$(oh-my-posh init zsh --config 'development-configuration/config/oh-my-posh.json')"
+eval "$(oh-my-posh init zsh --config '~/development-configuration/config/oh-my-posh.json')"
 ## The Fuck
 eval $(thefuck --alias)
 # Zoxide
