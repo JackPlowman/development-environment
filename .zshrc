@@ -6,6 +6,7 @@ zstyle ':omz:update' mode auto
 
 # ZSH Plugins
 plugins=(
+    aws
     terraform
     git
     zsh-autosuggestions
