@@ -29,7 +29,8 @@ fi
 
 # Initalise Oh My ZSH
 source $ZSH/oh-my-zsh.sh
-
+# Remove aws_prompt_info from right = https://github.com/ohmyzsh/ohmyzsh/discussions/10726
+RPROMPT="${RPROMPT//\$\(aws_prompt_info\)}"
 # User configuration
 # ------------------------------------------------------------------------#
 # Program Environment Variables/PATH updates
