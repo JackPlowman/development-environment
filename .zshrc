@@ -48,16 +48,13 @@ export NVM_DIR="$HOME/.nvm"
 ## Go (Golang)
 export PATH="$PATH:$HOME/go/bin"
 export GOPATH="$HOME/Projects/Personal"
-## Starship
-export STARSHIP_CONFIG=~/development-configuration/starship.toml
 # ------------------------------------------------------------------------#
 # Custom Environment Variables
 export SSO_LOGIN_URL=https://login.apigee.com
 # ------------------------------------------------------------------------#
 # Tools Setup
-## Starship
-eval "$(starship init zsh)"
-source ~/development-configuration/zsh-other-files/starship.zsh
+## Oh My Posh
+eval "$(oh-my-posh init zsh --config 'config/oh-my-posh.json')"
 ## The Fuck
 eval $(thefuck --alias)
 # Zoxide
