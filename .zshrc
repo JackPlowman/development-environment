@@ -50,7 +50,7 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:$HOME/go/bin"
 export GOPATH="$HOME/Projects/Personal"
 # Java
-export JAVA_HOME="/opt/homebrew/opt/openjdk/bin/java"
+export JAVA_HOME="/opt/homebrew/opt/openjdk"
 export PATH="$JAVA_HOME/bin:$PATH"
 # ------------------------------------------------------------------------#
 # Custom Environment Variables
