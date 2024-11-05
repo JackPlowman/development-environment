@@ -49,6 +49,9 @@ export NVM_DIR="$HOME/.nvm"
 ## Go (Golang)
 export PATH="$PATH:$HOME/go/bin"
 export GOPATH="$HOME/Projects/Personal"
+# Java
+export JAVA_HOME="/opt/homebrew/opt/openjdk/bin/java"
+export PATH="$JAVA_HOME/bin:$PATH"
 # ------------------------------------------------------------------------#
 # Custom Environment Variables
 export SSO_LOGIN_URL=https://login.apigee.com
