@@ -1,17 +1,8 @@
-name: "Pull Request Labeller"
+name: "Pull Request Tasks"
 
 on:
   pull_request:
-    types:
-      [
-        opened,
-        edited,
-        unlocked,
-        labeled,
-        synchronize,
-        reopened,
-        ready_for_review,
-      ]
+    types: [opened, synchronize]
 
 permissions:
   pull-requests: write
@@ -42,3 +33,13 @@ jobs:
               "800": "XL",
               "2000": "XXL"
             }
+
+  dependency-review:
+    name: Dependency Review
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4.2.2
+
+      - name: Dependency Review
+        uses: actions/dependency-review-action@v4.4.0
