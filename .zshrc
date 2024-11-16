@@ -98,3 +98,5 @@ alias branch_cleanup="bash ~/development-configuration/scripts/remove_all_branch
 alias rebase="bash ~/development-configuration/scripts/rebase_and_push.sh"
 alias main="bash ~/development-configuration/scripts/checkout_main_and_pull.sh"
 alias master="bash ~/development-configuration/scripts/checkout_master_and_pull.sh"
+
+. "$HOME/.local/bin/env"
