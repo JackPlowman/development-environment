@@ -94,6 +94,7 @@ alias pretty="prettier . --check --write"
 alias commands="bat ~/development-configuration/commands.md"
 # Aliases for Development Scripts
 alias commit="bash ~/development-configuration/scripts/commit_and_push.sh"
+alias update="bash ~/development-configuration/scripts/update_and_push.sh"
 alias branch_cleanup="bash ~/development-configuration/scripts/remove_all_branches_except_default.sh"
 alias rebase="bash ~/development-configuration/scripts/rebase_and_push.sh"
 alias main="bash ~/development-configuration/scripts/checkout_main_and_pull.sh"
