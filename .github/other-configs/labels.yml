@@ -42,6 +42,9 @@
 - color: 1900ff
   name: markdown
   description: Pull requests that update Markdown documentation
+- color: 1900ff
+  name: markdown
+  description: Pull requests that update Markdown documentation
 # Components
 - color: f27100
   name: brew

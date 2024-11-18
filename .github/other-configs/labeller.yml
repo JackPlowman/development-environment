@@ -2,7 +2,11 @@
 documentation:
   - any:
       - changed-files:
-          - any-glob-to-any-file: ["docs/**", "*.md", "LICENSE"]
+          - any-glob-to-any-file: ["README.md", "*.md", "docs/**"]
+markdown:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file: ["docs/*.md", "*.md", "LICENSE",  ".github/pull_request_template.md"]
 markdown:
   - any:
       - changed-files:
@@ -26,7 +30,7 @@ github_actions:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              [".github/workflows/*", ".github/workflows/**/*"]
+              [".github/workflows/*", ".github/actions/*"]
 git_hooks:
   - any:
       - changed-files:
