@@ -7,10 +7,6 @@ markdown:
   - any:
       - changed-files:
           - any-glob-to-any-file: ["docs/*.md", "*.md", "LICENSE",  ".github/pull_request_template.md"]
-markdown:
-  - any:
-      - changed-files:
-          - any-glob-to-any-file: ["docs/**", "*.md", "LICENSE"]
 dependencies:
   - any:
       - head-branch: ["^dependabot"]
