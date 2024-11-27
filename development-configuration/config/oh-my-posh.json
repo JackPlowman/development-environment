@@ -187,9 +187,7 @@
           "foreground": "#D4E157",
           "type": "status",
           "style": "plain",
-          "foreground_templates": [
-            "{{ if gt .Code 0 }}#FF5252{{ end }}"
-          ]
+          "foreground_templates": ["{{ if gt .Code 0 }}#FF5252{{ end }}"]
         }
       ],
       "newline": true
