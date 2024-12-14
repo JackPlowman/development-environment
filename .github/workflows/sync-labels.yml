@@ -7,13 +7,14 @@ on:
     paths:
       - .github/other-configs/labels.yml
 
-permissions:
-  contents: read
-  pull-requests: write
+permissions: {}
 
 jobs:
   configure-labels:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4.2.2
