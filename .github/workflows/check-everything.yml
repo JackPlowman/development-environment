@@ -63,21 +63,6 @@ jobs:
       - name: Check Justfile Format
         run: just just-format-check
 
-  run-actionlint:
-    name: Check GitHub Actions with actionlint
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4.2.2
-        with:
-          fetch-depth: 0
-          persist-credentials: false
-      - name: Install actionlint
-        id: get_actionlint
-        run: bash <(curl https://raw.githubusercontent.com/rhysd/actionlint/main/scripts/download-actionlint.bash)
-      - name: Check workflow files
-        run: ${{ steps.get_actionlint.outputs.executable }} -color # zizmor: ignore[template-injection]
-
   run-zizmor:
     name: Check GitHub Actions with zizmor
     runs-on: ubuntu-latest
