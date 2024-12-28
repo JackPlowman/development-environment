@@ -26,7 +26,7 @@ These are tools I am using and have found useful.
 
 ### Terminal
 
-- [Warp](https://github.com/warpdotdev/Warp)
+- [Ghostty](https://github.com/ghostty-org/ghostty)
 
 #### Terminal Theme
 
