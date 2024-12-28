@@ -11,3 +11,4 @@ TOOLS.md
 githooks
 Justfile
 docs
+ghostty-config.toml
