@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# find projects projects/personal -type d | fzf
+eval "$(zoxide init bash)"
 
-z switch "$1"
-
-code .
+z "development-ideas"
