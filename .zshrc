@@ -74,8 +74,6 @@ autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
 # Set up Git/FZF completions
 source ~/development-configuration/zsh-other-files/fzf-git-shortcuts.zsh
-# Set up Graphite Completions
-source ~/development-configuration/zsh-other-files/graphite-completions.zsh
 # Set up Oh My Posh Completions
 source ~/development-configuration/zsh-other-files/oh-my-posh-completions.zsh
 # ------------------------------------------------------------------------#
