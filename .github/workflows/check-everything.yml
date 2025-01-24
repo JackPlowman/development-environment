@@ -75,7 +75,7 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       - name: Install the latest version of uv
-        uses: astral-sh/setup-uv@v5.1.0
+        uses: astral-sh/setup-uv@v5.2.1
         with:
           version: "latest"
       - name: Run zizmor 🌈
@@ -83,7 +83,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Upload SARIF file
-        uses: github/codeql-action/upload-sarif@v3.28.1
+        uses: github/codeql-action/upload-sarif@v3.28.4
         with:
           sarif_file: results.sarif
           category: zizmor
@@ -100,9 +100,9 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@v3.28.1
+        uses: github/codeql-action/init@v3.28.4
         with:
           languages: actions
           queries: security-and-quality
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v3.28.1
+        uses: github/codeql-action/analyze@v3.28.4
