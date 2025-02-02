@@ -7,6 +7,7 @@ zstyle ':omz:update' mode auto
 
 # ZSH Plugins
 plugins=(
+  autoupdate
   aws
   terraform
   git
@@ -56,6 +57,7 @@ export PATH="$JAVA_HOME/bin:$PATH"
 # ------------------------------------------------------------------------#
 # Custom Environment Variables
 export SSO_LOGIN_URL=https://login.apigee.com
+export UPDATE_ZSH_DAYS=30 # Update ZSH plugins every 30 days
 # ------------------------------------------------------------------------#
 # Tools Setup
 ## Oh My Posh
