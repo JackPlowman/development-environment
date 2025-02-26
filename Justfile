@@ -23,12 +23,11 @@ just-format-check:
     just --fmt --check --unstable
 
 # ------------------------------------------------------------------------------
-# Git Leaks
+# gitleaks
 # ------------------------------------------------------------------------------
 
-# Detect secrets in the repos
 gitleaks-detect:
-    gitleaks detect --source .
+    gitleaks detect --source . > /dev/null
 
 # ------------------------------------------------------------------------------
 # Git Hooks
