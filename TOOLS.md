@@ -40,6 +40,7 @@ These are tools I am using and have found useful.
 - [bat](https://github.com/sharkdp/bat)
 - [granted](https://github.com/common-fate/granted)
 - [Graphite Cli](https://graphite.dev/docs/graphite-cli)
+- [atuin](https://github.com/atuinsh/atuin)
 
 #### Zsh Plugins
 

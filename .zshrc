@@ -68,6 +68,8 @@ eval $(thefuck --alias)
 eval "$(zoxide init zsh)"
 # Fzf Completions
 source <(fzf --zsh)
+# Atuin (history)
+eval "$(atuin init zsh)"
 # Eza Completions
 export FPATH="/opt/homebrew/bin/eza/completions/zsh:$FPATH"
 # Set manpath
