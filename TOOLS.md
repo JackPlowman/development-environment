@@ -12,8 +12,6 @@
       - [Zsh Plugins](#zsh-plugins)
     - [Applications](#applications)
     - [Web Applications](#web-applications)
-  - [Tools to look into](#tools-to-look-into)
-    - [MacOS Windows Manager](#macos-windows-manager)
     - [Python Tools](#python-tools)
 
 ## Tools I Use
@@ -56,14 +54,6 @@ These are tools I am using and have found useful.
 ### Web Applications
 
 - [Graphite](https://graphite.dev/)
-
-## Tools to look into
-
-These are tools I want to look into.
-
-### MacOS Windows Manager
-
-- [Aerospace](https://github.com/nikitabobko/AeroSpace)
 
 ### Python Tools
 
