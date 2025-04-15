@@ -69,6 +69,7 @@ eval "$(zoxide init zsh)"
 # Fzf Completions
 source <(fzf --zsh)
 # Atuin (history)
+export ATUIN_CONFIG_DIR="$HOME/development-configuration/config/atuin"
 eval "$(atuin init zsh)"
 # Eza Completions
 export FPATH="/opt/homebrew/bin/eza/completions/zsh:$FPATH"
