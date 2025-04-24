@@ -79,7 +79,7 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       - name: Install the latest version of uv
-        uses: astral-sh/setup-uv@v5.4.1
+        uses: astral-sh/setup-uv@v5.4.2
         with:
           version: "latest"
       - name: Run zizmor 🌈
@@ -87,7 +87,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Upload SARIF file
-        uses: github/codeql-action/upload-sarif@v3.28.15
+        uses: github/codeql-action/upload-sarif@v3.28.16
         with:
           sarif_file: results.sarif
           category: zizmor
@@ -102,7 +102,7 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       - name: Install the latest version of uv
-        uses: astral-sh/setup-uv@v5.4.1
+        uses: astral-sh/setup-uv@v5.4.2
         with:
           version: "latest"
       - name: Run Lefthook Validate
@@ -120,9 +120,9 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@v3.28.15
+        uses: github/codeql-action/init@v3.28.16
         with:
           languages: actions
           queries: security-and-quality
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v3.28.15
+        uses: github/codeql-action/analyze@v3.28.16
