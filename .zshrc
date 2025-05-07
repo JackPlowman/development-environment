@@ -86,7 +86,7 @@ source ~/development-configuration/zsh-other-files/oh-my-posh-completions.zsh
 # Aliases
 alias reload="source ~/.zshrc"
 alias lg=lazygit
-alias python='python3.9'
+alias python='python3.13'
 alias cd=z
 alias cat="bat"
 alias show="eza"
