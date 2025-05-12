@@ -104,5 +104,5 @@ alias rebase="bash ~/development-configuration/scripts/rebase_and_push.sh"
 alias main="bash ~/development-configuration/scripts/checkout_main_and_pull.sh"
 alias master="bash ~/development-configuration/scripts/checkout_master_and_pull.sh"
 alias project="bash ~/development-configuration/scripts/project_switch.sh"
-
+alias fetch-all="bash ~/development-configuration/scripts/fetch_all.sh"
 . "$HOME/.local/bin/env"
