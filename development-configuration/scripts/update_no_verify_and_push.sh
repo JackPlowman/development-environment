@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Commit the changes with the provided commit title
+# Commit the changes
 echo "Committing staged changes..."
 git commit -m "update" --no-verify
 
