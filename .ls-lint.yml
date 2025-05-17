@@ -1,0 +1,8 @@
+ls:
+  .md: screamingsnakecase
+  .yaml: kebabcase
+  .yml: kebabcase
+  .github/*: kebabcase
+
+ignore:
+  - .git
