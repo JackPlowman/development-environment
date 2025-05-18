@@ -107,5 +107,6 @@ alias master="bash ~/development-configuration/scripts/checkout_master_and_pull.
 alias project="bash ~/development-configuration/scripts/project_switch.sh"
 alias fetch-all="bash ~/development-configuration/scripts/fetch_all.sh"
 alias box="bash ~/development-configuration/scripts/box.sh"
+alias squash="bash ~/development-configuration/scripts/squash.sh"
 
 . "$HOME/.local/bin/env"
