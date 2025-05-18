@@ -12,6 +12,7 @@
       - [Zsh Plugins](#zsh-plugins)
     - [Applications](#applications)
     - [Web Applications](#web-applications)
+    - [Chrome Extensions](#chrome-extensions)
     - [Python Tools](#python-tools)
 
 ## Tools I Use
@@ -50,11 +51,15 @@ These are tools I am using and have found useful.
 ### Applications
 
 - [devtoys](https://github.com/DevToys-app/DevToys)
-- [freeter](https://github.com/FreeterApp/Freeter)
 
 ### Web Applications
 
 - [Graphite](https://graphite.dev/)
+
+### Chrome Extensions
+
+- [Harper](https://chromewebstore.google.com/detail/private-grammar-checking/lodbfhdipoipcjmlebjbgmmgekckhpfb)
+- [Refined GitHub](https://chromewebstore.google.com/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf)
 
 ### Python Tools
 
