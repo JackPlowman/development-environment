@@ -1,6 +1,6 @@
 # Development Environment
 
-This repository contains my development environment configuration files, including dotfiles for Zsh, and other tools. It is designed to be used with [GNU Stow](https://www.gnu.org/software/stow/) to manage the symlinks in your home directory.
+This repository contains my development environment configuration files, including dotfiles for Zsh, and other tools. It is designed to be used with GNU Stow to manage the symlinks in your home directory.
 
 ## Getting Started
 
