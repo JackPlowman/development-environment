@@ -61,6 +61,7 @@ These are tools I am using and have found useful.
 - [Raycast](https://chromewebstore.google.com/detail/raycast-companion/fgacdjnoljjfikkadhogeofgjoglooma)
 - [Material Icons for GitHub](https://chromewebstore.google.com/detail/material-icons-for-github/bggfcpfjbdkhfhfmkjpbhnkhnpjjeomc)
 - [GitHub Isometric Contributions](https://github.com/jasonlong/isometric-contributions)
+- [React Developer Tools](https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
 
 ### Python Tools
 
