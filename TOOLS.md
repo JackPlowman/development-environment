@@ -11,7 +11,6 @@
       - [Terminal Tools](#terminal-tools)
       - [Zsh Plugins](#zsh-plugins)
     - [Applications](#applications)
-    - [Web Applications](#web-applications)
     - [Chrome Extensions](#chrome-extensions)
     - [Python Tools](#python-tools)
 
@@ -40,7 +39,6 @@ These are tools I am using and have found useful.
 - [eza](https://github.com/eza-community/eza?tab=readme-ov-file)
 - [bat](https://github.com/sharkdp/bat)
 - [granted](https://github.com/common-fate/granted)
-- [Graphite Cli](https://graphite.dev/docs/graphite-cli)
 - [atuin](https://github.com/atuinsh/atuin)
 
 #### Zsh Plugins
@@ -52,14 +50,11 @@ These are tools I am using and have found useful.
 
 - [devtoys](https://github.com/DevToys-app/DevToys)
 
-### Web Applications
-
-- [Graphite](https://graphite.dev/)
-
 ### Chrome Extensions
 
 - [Harper](https://chromewebstore.google.com/detail/private-grammar-checking/lodbfhdipoipcjmlebjbgmmgekckhpfb)
 - [Refined GitHub](https://chromewebstore.google.com/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf)
+- [Le Git Graph](https://github.com/NirmalScaria/le-git-graph)
 
 ### Python Tools
 
