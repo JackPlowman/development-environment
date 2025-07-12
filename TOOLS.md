@@ -57,6 +57,8 @@ These are tools I am using and have found useful.
 - [Refined GitHub](https://chromewebstore.google.com/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf)
 - [Le Git Graph](https://github.com/NirmalScaria/le-git-graph)
 - [raycast](https://chromewebstore.google.com/detail/raycast-companion/fgacdjnoljjfikkadhogeofgjoglooma)
+- [Entropy](https://chromewebstore.google.com/detail/entropy-extension-auto-bl/jfglacfdockpdpbfodkipgcjplgnojel)
+  - [Site](https://entropysec.io/)
 
 ### Python Tools
 
