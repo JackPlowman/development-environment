@@ -60,6 +60,7 @@ These are tools I am using and have found useful.
   - [Site](https://entropysec.io/)
 - [Raycast](https://chromewebstore.google.com/detail/raycast-companion/fgacdjnoljjfikkadhogeofgjoglooma)
 - [Material Icons for GitHub](https://chromewebstore.google.com/detail/material-icons-for-github/bggfcpfjbdkhfhfmkjpbhnkhnpjjeomc)
+- [GitHub Isometric Contributions](https://github.com/jasonlong/isometric-contributions)
 
 ### Python Tools
 
