@@ -49,12 +49,14 @@ These are tools I am using and have found useful.
 ### Applications
 
 - [devtoys](https://github.com/DevToys-app/DevToys)
+- [raycast](https://www.raycast.com/)
 
 ### Chrome Extensions
 
 - [Harper](https://chromewebstore.google.com/detail/private-grammar-checking/lodbfhdipoipcjmlebjbgmmgekckhpfb)
 - [Refined GitHub](https://chromewebstore.google.com/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf)
 - [Le Git Graph](https://github.com/NirmalScaria/le-git-graph)
+- [raycast](https://chromewebstore.google.com/detail/raycast-companion/fgacdjnoljjfikkadhogeofgjoglooma)
 
 ### Python Tools
 
