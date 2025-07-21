@@ -50,6 +50,7 @@ These are tools I am using and have found useful.
 
 - [devtoys](https://github.com/DevToys-app/DevToys)
 - [Raycast](https://www.raycast.com/)
+- [Obsidian](https://obsidian.md/)
 
 ### Chrome Extensions
 
