@@ -5,7 +5,7 @@
 `show_tree` - Show the tree of the current directory.
 `pretty` - Run prettier on the current directory.
 `project` - Select a project and open it in the terminal.
-`pcode` - Select a project and open it in the terminal and VS Code.
+`pcode` - Select a project and open it in the terminal and Visual Studio Code.
 
 ## Git
 
