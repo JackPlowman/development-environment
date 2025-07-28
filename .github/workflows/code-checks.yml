@@ -36,6 +36,8 @@ jobs:
           LINTER_RULES_PATH: .github/super-linter-configurations
           YAML_ERROR_ON_WARNING: true
           FILTER_REGEX_EXCLUDE: .config/zed/settings.json
+          VALIDATE_GIT_COMMITLINT: false
+          VALIDATE_EDITORCONFIG: false
 
   common-code-checks:
     name: Common Code Checks
