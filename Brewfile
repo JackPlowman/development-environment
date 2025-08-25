@@ -9,6 +9,7 @@ tap "skyscanner/tools"
 tap "withgraphite/tap"
 brew "act"
 brew "actionlint"
+# Explicitly install git via Homebrew to ensure a consistent, up-to-date version across all environments.
 brew "git"
 brew "asdf"
 brew "atuin"
