@@ -7,12 +7,11 @@ zstyle ':omz:update' mode auto
 
 # ZSH Plugins
 plugins=(
-  autoupdate
   aws
   terraform
   git
-  zsh-autosuggestions
-  zsh-syntax-highlighting
+  # zsh-autosuggestions
+  # zsh-syntax-highlighting
   poetry
   poetry-env
   thefuck
@@ -87,5 +86,3 @@ alias branch_cleanup="bash ~/development-configuration/scripts/remove_all_branch
 alias rebase="bash ~/development-configuration/scripts/rebase_and_push.sh"
 alias main="bash ~/development-configuration/scripts/checkout_main_and_pull.sh"
 alias master="bash ~/development-configuration/scripts/checkout_master_and_pull.sh"alias fetch-all="bash ~/development-configuration/scripts/fetch_all.sh"
-
-. "$HOME/.local/bin/env"
