@@ -7,12 +7,11 @@ zstyle ':omz:update' mode auto
 
 # ZSH Plugins
 plugins=(
-  autoupdate
   aws
   terraform
   git
-  zsh-autosuggestions
-  zsh-syntax-highlighting
+  # zsh-autosuggestions
+  # zsh-syntax-highlighting
   poetry
   poetry-env
   thefuck
@@ -44,20 +43,8 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 ## Add Docker
 export PATH="$PATH:/usr/local/bin/docker"
-## NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
-## Go (Golang)
-export PATH="$PATH:$(go env GOPATH)/bin"
-export GOPATH="$HOME/Projects/Personal"
-export PATH="$PATH:$HOME/go/bin"
-# Java
-export JAVA_HOME="/opt/homebrew/opt/openjdk"
-export PATH="$JAVA_HOME/bin:$PATH"
 # ------------------------------------------------------------------------#
 # Custom Environment Variables
-export SSO_LOGIN_URL=https://login.apigee.com
 export UPDATE_ZSH_DAYS=30 # Update ZSH plugins every 30 days
 # ------------------------------------------------------------------------#
 # Tools Setup
@@ -69,9 +56,6 @@ eval $(thefuck --alias)
 eval "$(zoxide init zsh)"
 # Fzf Completions
 source <(fzf --zsh)
-# Atuin (history)
-export ATUIN_CONFIG_DIR="$HOME/development-configuration/config/atuin"
-eval "$(atuin init zsh)"
 # Eza Completions
 export FPATH="/opt/homebrew/bin/eza/completions/zsh:$FPATH"
 # Set manpath
@@ -86,7 +70,6 @@ source ~/development-configuration/zsh-other-files/oh-my-posh-completions.zsh
 # ------------------------------------------------------------------------#
 # Aliases
 alias reload="source ~/.zshrc"
-alias lg=lazygit
 alias python='python3.13'
 alias cd=z
 alias cat="bat"
@@ -99,16 +82,7 @@ alias pretty="prettier . --check --write"
 alias commands="bat ~/development-configuration/commands.md"
 # Aliases for Development Scripts
 alias commit="bash ~/development-configuration/scripts/commit_and_push.sh"
-alias update="bash ~/development-configuration/scripts/update_and_push.sh"
-alias update_no_verify="bash ~/development-configuration/scripts/update_no_verify_and_push.sh"
 alias branch_cleanup="bash ~/development-configuration/scripts/remove_all_branches_except_default.sh"
 alias rebase="bash ~/development-configuration/scripts/rebase_and_push.sh"
 alias main="bash ~/development-configuration/scripts/checkout_main_and_pull.sh"
-alias master="bash ~/development-configuration/scripts/checkout_master_and_pull.sh"
-alias project='cd "$(find ~/Projects/Personal -type d -maxdepth 1 | sed "s|$HOME/Projects/Personal/||" | fzf)"'
-alias pcode='cd "$(find ~/Projects/Personal -type d -maxdepth 1 | sed "s|$HOME/Projects/Personal/||" | fzf) && code ."'
-alias fetch-all="bash ~/development-configuration/scripts/fetch_all.sh"
-alias box="bash ~/development-configuration/scripts/box.sh"
-alias squash="bash ~/development-configuration/scripts/squash.sh"
-
-. "$HOME/.local/bin/env"
+alias master="bash ~/development-configuration/scripts/checkout_master_and_pull.sh"alias fetch-all="bash ~/development-configuration/scripts/fetch_all.sh"
