@@ -11,11 +11,11 @@ extract_jira_prefix() {
     local branch_name="$1"
 
     # Match common JIRA patterns: ABC-123, PROJ-456, etc.
-    # Extract the project key (letters before the dash and number)
-    if [[ $branch_name =~ ^([A-Z]+)-[0-9]+ ]]; then
+    # Extract the full JIRA ticket ID (project key + number)
+    if [[ $branch_name =~ ^([A-Z]+-[0-9]+) ]]; then
         echo "${BASH_REMATCH[1]}"
-    elif [[ $branch_name =~ ([A-Z]+)-[0-9]+- ]]; then
-        # Handle cases like feature/ABC-123-description
+    elif [[ $branch_name =~ ([A-Z]+-[0-9]+)[_-] ]]; then
+        # Handle cases like ABC-123-description or feature/ABC-123-description
         echo "${BASH_REMATCH[1]}"
     else
         # No JIRA prefix found
@@ -26,7 +26,8 @@ extract_jira_prefix() {
 # Function to load environment variables using direnv
 load_env_vars() {
     local prefix="$1"
-    local env_file=".envrc.${prefix,,}" # Convert to lowercase
+    local env_file
+    env_file=".envrc.$(echo "$prefix" | tr '[:upper:]' '[:lower:]')" # Convert to lowercase
 
     if [[ -f "$env_file" ]]; then
         echo "Loading environment variables from $env_file"
