@@ -58,6 +58,8 @@ eval "$(zoxide init zsh)"
 source <(fzf --zsh)
 # Eza Completions
 export FPATH="/opt/homebrew/bin/eza/completions/zsh:$FPATH"
+# Homebrew Make
+export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
 # Set manpath
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 # Set up Terraform Completions
