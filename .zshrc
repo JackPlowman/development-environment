@@ -89,3 +89,12 @@ alias rebase="bash ~/development-configuration/scripts/rebase_and_push.sh"
 alias main="bash ~/development-configuration/scripts/checkout_main_and_pull.sh"
 alias master="bash ~/development-configuration/scripts/checkout_master_and_pull.sh"
 alias fetch-all="bash ~/development-configuration/scripts/fetch_all.sh"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/jackplowman/.lmstudio/bin"
+# End of LM Studio CLI section
+
+
+
+# Added by Antigravity CLI installer
+export PATH="/Users/jackplowman/.local/bin:$PATH"

@@ -7,44 +7,33 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "code_lens": "on",
-  "languages": {
-    "Python": {
-      "language_servers": ["!basedpyright", "ty"],
-      "inlay_hints": {
-        "enabled": true,
-      },
-    },
-  },
-  "edit_predictions": {
-    "provider": "copilot",
-  },
   "terminal": {
     "env": {
-      "FIG_NEW_SESSION": "\"1\"",
-    },
+      "FIG_NEW_SESSION": "\"1\""
+    }
   },
   "agent": {
     "enabled": true,
     "button": true,
     "favorite_models": [],
-    "model_parameters": [],
+    "model_parameters": []
   },
   "search": {
-    "include_ignored": false,
+    "include_ignored": false
   },
   "linked_edits": true,
   "icon_theme": "Zed (Default)",
+  "features": { "inline_completion_provider": "copilot" },
   "base_keymap": "VSCode",
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "One Dark",
+    "dark": "One Dark"
   },
   "ui_font_size": 16,
   "buffer_font_size": 16,
   "tabs": {
-    "git_status": true,
+    "git_status": true
   },
-  "autosave": "on_focus_change",
+  "autosave": "on_focus_change"
 }
