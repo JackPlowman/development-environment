@@ -19,12 +19,12 @@ jobs:
       pull-requests: write # to create PR review comments
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v7.0.1
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
           persist-credentials: false
       - name: Dependency Review
-        uses: actions/dependency-review-action@v5.0.0
+        uses: actions/dependency-review-action@a1d282b36b6f3519aa1f3fc636f609c47dddb294 # v5.0.0
         with:
           comment-summary-in-pr: on-failure
 
@@ -36,13 +36,13 @@ jobs:
       pull-requests: write # to create and update PR labels
     steps:
       - name: Label Pull Request
-        uses: actions/labeler@v7.0.0
+        uses: actions/labeler@bf12e9b00b37c5c0ca2b87b79b2daf7891dbda13 # v7.0.0
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
           configuration-path: .github/tool-configurations/labeller.yml
           sync-labels: true
       - name: Add Size Labels
-        uses: pascalgn/size-label-action@v0.5.7
+        uses: pascalgn/size-label-action@56b489b027932ec0cf60438a1a5f1a19c8fc71ff # v0.5.7
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         with:
