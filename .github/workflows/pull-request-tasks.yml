@@ -11,10 +11,47 @@ concurrency:
 permissions: {}
 
 jobs:
-  common-pull-request-tasks:
-    name: Common Pull Request Tasks
+  dependency-review:
+    name: "Common Pull Request Tasks / Dependency Review"
+    runs-on: ubuntu-latest
     permissions:
-      pull-requests: write # For writing labels and comments on PRs
-    uses: JackPlowman/reusable-workflows/.github/workflows/common-pull-request-tasks.yml@9b05cbf77da4cc8d3238499a28d179c41cbcf6ac # v2026.02.14.01
-    secrets:
-      workflow_github_token: ${{ secrets.GITHUB_TOKEN }}
+      contents: read
+      pull-requests: write # to create PR review comments
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Dependency Review
+        uses: actions/dependency-review-action@a1d282b36b6f3519aa1f3fc636f609c47dddb294 # v5.0.0
+        with:
+          comment-summary-in-pr: on-failure
+
+  labeller:
+    name: "Common Pull Request Tasks / Label Pull Request"
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write # to create and update PR labels
+    steps:
+      - name: Label Pull Request
+        uses: actions/labeler@bf12e9b00b37c5c0ca2b87b79b2daf7891dbda13 # v7.0.0
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          configuration-path: .github/tool-configurations/labeller.yml
+          sync-labels: true
+      - name: Add Size Labels
+        uses: pascalgn/size-label-action@56b489b027932ec0cf60438a1a5f1a19c8fc71ff # v0.5.7
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        with:
+          sizes: >
+            {
+              "0": "XS",
+              "40": "S",
+              "100": "M",
+              "200": "L",
+              "800": "XL",
+              "2000": "XXL"
+            }
