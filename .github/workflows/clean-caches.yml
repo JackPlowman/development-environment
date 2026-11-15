@@ -13,9 +13,26 @@ permissions: {}
 
 jobs:
   clean-caches:
-    name: Clean Caches
+    name: Clean GitHub Action Caches
+    runs-on: ubuntu-latest
     permissions:
       contents: read
-    uses: JackPlowman/reusable-workflows/.github/workflows/common-clean-caches.yml@e9dfe69334dc913550976dd48108f0014638b899 # v2026.10.26.01
-    secrets:
-      workflow_github_token: ${{ secrets.GH_TOKEN }}
+      actions: write # For deleting GitHub Actions caches
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Delete caches
+        shell: bash
+        run: |
+          if [[ "${GITHUB_REPOSITORY}" =~ ^[a-zA-Z0-9_.-]+/[a-zA-Z0-9_.-]+$ ]]; then
+            gh cache delete --all --repo "${GITHUB_REPOSITORY}"
+          else
+            echo "Invalid repository name: ${GITHUB_REPOSITORY}"
+            exit 1
+          fi
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}

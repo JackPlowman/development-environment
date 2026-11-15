@@ -17,9 +17,19 @@ permissions: {}
 jobs:
   configure-labels:
     name: Configure Labels
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       pull-requests: write # For writing labels to the repository
-    uses: JackPlowman/reusable-workflows/.github/workflows/common-sync-labels.yml@e9dfe69334dc913550976dd48108f0014638b899 # v2026.10.26.01
-    secrets:
-      workflow_github_token: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Sync labels
+        uses: micnncim/action-label-syncer@v1.3.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
+          manifest: .github/tool-configurations/labels.yml
